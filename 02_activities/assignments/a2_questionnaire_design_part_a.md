@@ -16,30 +16,83 @@ Select one of the scenarios below and design a survey to meet the need(s) outlin
 
 # Your Changes
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `#3`
+
+"The relationship between music taste and age. 
+- comparisons between different people of different ages
+- comparisons of the same individual at different ages during their lifetime. 
+- to what extent age influences music taste, specifically as it relates to perceptions of popular music. 
+
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of this survey is to extraxt a pattern of how age influences taste in music, with specific focus on perceptions of popular music. data on the music preferences of individuals at different stages of their lives and to compare these preferences across different age groups.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target Population
+The target population for this survey includes people of various age groups who have experienced different phases of popular music trends. This includes teenagers, young adults, middle-aged adults, and older adults.
+
+Sampling Frame
+The sampling frame consists of students, faculty/staff at the University of Toronto, as well as alumni and members of the general public who are accessible through online platforms and social media.
+
+Sampling Units
+The sampling units are those who fit within the target population and are willing to participate in the survey.
+
+Observational Units
+The observational units are the individual responses collected from each participant in the survey. Each response will provide data on the participant's age, current music preferences, perceptions of popular music, changes in music taste over time, and the perceived influence of age on their music taste.
+
+Sampling Strategy
+A stratified random sampling strategy will be used to ensure representation across different age groups. The population will be divided into strata based on age ranges (e.g., 13-19, 20-29, 30-39, 40-49, 50+), and random samples will be drawn from each stratum to ensure a balanced representation.
+
+
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+Demographic Information:
+What is your age?
+- 13-19
+- 20-29
+- 30-39
+- 40-49
+- 50+
+
+Current Music Preferences:
+How would you describe your current music taste? (Select all that apply)
+- Pop
+- Rock
+- Hip-Hop/Rap
+- Classical
+- Jazz
+- Country
+- Electronic/Dance
+- Others
+
+Perception of Popular Music:
+How do you perceive the current popular music trends?
+- Very Favorable
+- Favorable
+- Neutral
+- Unfavorable
+- Very Unfavorable
+
+Music Taste Over Time:
+How has your music taste changed over the past 10 years? (Select all that apply)
+- It has remained the same.
+- I have started liking new genres.
+- I have stopped liking some genres.
+- My preference for certain genres has increased.
+- My preference for certain genres has decreased.
+
+Influence of Age on Music Taste:
+To what extent do you believe your age has influenced your music taste?
+- Not at all
+- Slightly
+- Moderately
+- Significantly
+- Extremely
 ```
 
 ## Rubric
