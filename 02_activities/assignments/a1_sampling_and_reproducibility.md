@@ -10,11 +10,36 @@ Modify the number of repetitions in the simulation to 1000 (from the original 50
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Isaias Menorca
 
 ```
-Please write your explanation here...
+Identify all stages at which sampling is occurring in the model. 
+[ANS] 
+Stage 1 - line 47 
+sampling procedure: Infect a random subset of people based on ATTACK_RATE of 10%
+functions used: np.random.choice
+sample size: 100 people
+sampling frame: 1000 people
+underlying distribution: Uniform
+how these relate to the procedure outlined in the blog post: 
+The blog's mention that "each person has a 10% chance of being infected" corrolates with the formula used for sampling size = sampling frame x attack_rate. The code provides a more optimal way, closer to real-world simulation of the spread of an infection
 
+Stage 2 - line 51 
+sampling procedure: Determine which persons among the infected get traced in random
+functions used: np.random.rand
+sample size: sum(ppl['infected'])
+sampling frame: portion of infected people
+underlying distribution: Every infected person has same probability of being randomly marked as traced
+how these relate to the procedure outlined in the blog post: Blog mentions how the results may be biased as this random process could potentially pick disproportionately from various groupings
+
+
+Stage 3 - line 56
+sampling procedure: Events having 2 or more traced people will have all the infected person in these events marked as traced.
+functions used: ppl['infected'].value_counts()
+sample size: Events with 2 or more traced people
+sampling frame: Events with traced individuals
+underlying distribution: depends on wether the 2 traced people in an event is identified
+blog post: Whitby discussed how this contact tracing might be biased for certain events wherein more individuals are traced.
 ```
 
 
@@ -39,9 +64,9 @@ Please write your explanation here...
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `sampling-and-reproducibility`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `sampling-and-reproducibility`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack at `#cohort-3-help`. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
